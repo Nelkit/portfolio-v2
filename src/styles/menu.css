@@ -1,0 +1,65 @@
+.Menu{
+    width: 100%;
+}
+
+.Menu-content{
+    width: 100%;
+}
+
+.Menu-list{
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.Menu-list .Menu-list-button{
+    display: none;
+    position: absolute;
+    left: 10px;
+}
+
+.Menu-list .Menu-list-item{
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.Menu-list .Menu-list-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+}
+
+.Menu-list .Menu-list-item a.active{
+    background-color: white;
+    border-radius: 8px;
+}
+
+.Menu-list .Menu-list-item a.active{
+    color: #8F8F8F;
+}
+
+@media only screen and (max-width: 480px) {
+    .Menu-list-item{
+        display: none;
+    }
+
+    .Menu-list{
+        justify-content: center;
+    }
+
+    .Menu-list .Menu-list-button{
+        display: block;
+    }
+  }

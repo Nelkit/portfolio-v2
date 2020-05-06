@@ -1,0 +1,19 @@
+header.extend{
+    height: 512px;
+}
+
+header.gradient{
+    background: rgb(30,97,163);
+    background: linear-gradient(0deg, rgba(30,97,163,0.4962359943977591) 0%, rgba(113,208,174,0.7259278711484594) 50%),  url('./../images/header-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Title-header{
+    color: white;
+}
+
+.title-spacing{
+    margin: 130px auto;
+}

@@ -620,3 +620,14 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.text-center{
+  text-align: center;
+}
+
+.Content{
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 340px;
+  padding: 1.45rem 1.0875rem;
+}

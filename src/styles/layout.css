@@ -630,4 +630,23 @@ pre tt:after {
   max-width: 960px;
   min-width: 340px;
   padding: 1.45rem 1.0875rem;
+  position: relative;
+}
+
+.Social-list{
+  width: 100%;
+  margin: 0px;
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divider{
+  display: inline-block;
+  width: 100px;
+  height: 0px;
+  background: transparent;
+  border: 2px solid #979797;
+  margin: 20px 20px;
 }

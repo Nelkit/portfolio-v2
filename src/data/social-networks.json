@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "title": "Twitter",
+        "link": "http://twitter.com/nelkitchavez",
+        "icon": "twitter.png",
+        "width": 50,
+        "height": 40
+    },
+    {
+        "id":2,
+        "title": "Github",
+        "link": "http://github.com/nelkit",
+        "icon": "github.png",
+        "width": 41,
+        "height": 40
+    },
+    {
+        "id":3,
+        "title": "LinkedIn",
+        "link": "http://linkedin.com/nelkit",
+        "icon": "linkedin.png",
+        "width": 40,
+        "height": 40
+    },
+    {
+        "id":4,
+        "title": "Behance",
+        "link": "http://behance.com/nelkit",
+        "icon": "behance.png",
+        "width": 40,
+        "height": 40
+    }
+]

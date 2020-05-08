@@ -33,13 +33,13 @@ class Menu extends React.Component {
                                 <Link to="/">Inicio</Link>
                             </li>
                             <li className="Menu-dropdown-item">
-                                <Link to="/page-2/">Acerca de</Link>
+                                <Link to="/about/">Acerca de</Link>
                             </li>
                             <li className="Menu-dropdown-item">
-                                <Link to="/page-2/">Proyectos</Link>
+                                <Link to="/projects/">Proyectos</Link>
                             </li>
                             <li className="Menu-dropdown-item">
-                                <Link to="/page-2/">Blog</Link>
+                                <Link to="/blog/">Blog</Link>
                             </li>
                         </ul>
                     )}
@@ -60,7 +60,7 @@ class Menu extends React.Component {
                             <Link to="/projects/" activeClassName="active">Proyectos</Link>
                         </li>
                         <li className="Menu-list-item">
-                            <Link to="/page-2/" activeClassName="active">Blog</Link>
+                            <Link to="/blog/" activeClassName="active">Blog</Link>
                         </li>
                     </ul>
                 </div>

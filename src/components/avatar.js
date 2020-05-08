@@ -16,7 +16,7 @@ const Avatar = () => {
     }
   `)
 
-  return <Img className="avatar" alt="Avatar" style={{position:'absolute', "width": 200, "height": 200}} fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img className="avatar" alt="Avatar" style={{position:'relative', "width": 160, "height": 160}} fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default Avatar

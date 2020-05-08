@@ -2,20 +2,32 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import DynamicImage from "../components/dynamic-image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Inicio" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import JSONData from "./../data/social-networks.json"
+
+const IndexPage = () => {
+
+  return (
+    <Layout>
+      <SEO title="Inicio" />
+      <div className="Content text-center">
+        <h1>Social Media</h1>
+        <hr className="divider" />
+        <ul className="Social-list">
+          {JSONData.map((network, index) => (
+            <li key={index} >
+              <a href="#">
+                <DynamicImage width={network.width} height={network.height} src={network.icon} />
+              </a>
+            </li>
+          ))}
+        </ul>
+        <hr className="divider" />
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage

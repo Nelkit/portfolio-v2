@@ -6,11 +6,11 @@ import Menu from './menu.js'
 import Avatar from './avatar.js'
 
 const Header = ({ siteTitle }) => (
-  <header className="extend gradient">
+  <header className="Header gradient">
 
     <div className="Content">
       <Menu />
-      <h1 className="Title-header text-center title-spacing">
+      <h1 className="Header-title text-center title-spacing">
           <span>Hi, I'm Nelkit,</span>
           <br/>
           <strong>
@@ -24,12 +24,10 @@ const Header = ({ siteTitle }) => (
               loop />
           </strong>
       </h1>
-      
-      <div>
+      <div className="Header-contact-bar">
         <Avatar/>
         <button>Contacto</button>
       </div>
-
     </div>
   </header>
 )

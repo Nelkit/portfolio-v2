@@ -1,8 +1,9 @@
-header.extend{
-    height: 512px;
+.Header{
+    position: relative;
+    margin-bottom: 60px;
 }
 
-header.gradient{
+.Header.gradient{
     background: rgb(30,97,163);
     background: linear-gradient(0deg, rgba(30,97,163,0.4962359943977591) 0%, rgba(113,208,174,0.7259278711484594) 50%),  url('./../images/header-background.png');
     background-repeat: no-repeat;
@@ -10,10 +11,21 @@ header.gradient{
     background-size: cover;
 }
 
-.Title-header{
+.Header-title{
     color: white;
 }
 
 .title-spacing{
     margin: 130px auto;
+}
+
+.Header-contact-bar{
+    position: absolute;
+    bottom: -80px;
+    height: 160px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 1.0875rem;
+    right: 1.0875rem;
 }

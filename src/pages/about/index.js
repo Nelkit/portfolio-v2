@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -23,12 +22,12 @@ const About = () => {
 
   return(
     <Layout>
-      <SEO title="Acerca de" />
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
+      <SEO title="Sobre Mi" />
+      <div className="text-center">
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
+        <hr className="divider" />
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      </div>
     </Layout>
   )
 }

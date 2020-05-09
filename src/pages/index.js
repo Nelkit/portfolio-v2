@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import DynamicImage from "../components/dynamic-image"
@@ -12,13 +11,13 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Inicio" />
-      <div className="Content text-center">
+      <div className="text-center">
         <h1>Social Media</h1>
         <hr className="divider" />
         <ul className="Social-list">
           {JSONData.map((network, index) => (
             <li key={index} >
-              <a href="#">
+              <a href={network.link} target="_blank" rel="noopener noreferrer">
                 <DynamicImage width={network.width} height={network.height} src={network.icon} />
               </a>
             </li>

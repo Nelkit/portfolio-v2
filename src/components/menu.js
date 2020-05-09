@@ -6,52 +6,43 @@ import "./../styles/menu.css"
 class Menu extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {dropdownIsHidden: true};
-
-        this.showDropDown = this.showDropDown.bind(this);
+        this.dropdownRef = React.createRef()
     }
 
     showDropDown (){
-        if (this.state.dropdownIsHidden){
-            this.setState({
-                dropdownIsHidden: false,
-            })
-        }else{
-            this.setState({
-                dropdownIsHidden: true,
-            })
-        }
+        const dropdown = this.dropdownRef.current
+        dropdown.classList.toggle('show-dropdown-menu')
     }
 
     render() {
         return (
             <div className="Menu">
                 <div className="Menu-content">
-                    { !this.state.dropdownIsHidden && (
-                        <ul className="Menu-dropdown">
-                            <li className="Menu-dropdown-item">
-                                <Link to="/">Inicio</Link>
-                            </li>
-                            <li className="Menu-dropdown-item">
-                                <Link to="/about/">Acerca de</Link>
-                            </li>
-                            <li className="Menu-dropdown-item">
-                                <Link to="/projects/">Proyectos</Link>
-                            </li>
-                            <li className="Menu-dropdown-item">
-                                <Link to="/blog/">Blog</Link>
-                            </li>
-                        </ul>
-                    )}
+
+                    <ul ref={this.dropdownRef} className="Menu-dropdown">
+                        <li className="Menu-dropdown-item">
+                            <Link to="/" activeClassName="active">Inicio</Link>
+                        </li>
+                        <li className="Menu-dropdown-item">
+                            <Link to="/about/" activeClassName="active">Sobre mí</Link>
+                        </li>
+                        <li className="Menu-dropdown-item">
+                            <Link to="/projects/" activeClassName="active">Proyectos</Link>
+                        </li>
+                        <li className="Menu-dropdown-item">
+                            <Link to="/blog/" activeClassName="active">Blog</Link>
+                        </li>
+                    </ul>
+
                     <ul className="Menu-list">
                         <li className="Menu-list-button">
-                            <button onClick={this.showDropDown}>Menú</button>
+                            <button className="btn btn-transparent" onClick={() => this.showDropDown()}>Menú</button>
                         </li>
                         <li className="Menu-list-item">
                             <Link to="/" activeClassName="active">Inicio</Link>
                         </li>
                         <li className="Menu-list-item">
-                            <Link to="/about/" activeClassName="active">Acerca de</Link>
+                            <Link to="/about/" activeClassName="active">Sobre mí</Link>
                         </li>
                         <li>
                             <Link to="/"><Logo /></Link>

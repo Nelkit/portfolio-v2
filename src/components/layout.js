@@ -11,8 +11,12 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./../styles/layout.css"
+import "./../styles/utils.css"
+import "./../styles/footer.css"
 
-const Layout = ({ children }) => {
+const Layout = ({children }) => {
+
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,18 +30,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
+      <main>
+        <div className="Content">
+          {children}
+        </div>
+      </main>
+      <footer>
+        <div className="Content">
           Handmade by me © {new Date().getFullYear()}.
-        </footer>
-      </div>
+        </div>
+      </footer>
     </>
   )
 }

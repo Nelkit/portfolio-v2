@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 
 const Blog = () => {
-const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
         allMarkdownRemark(
             filter: { fileAbsolutePath: {regex: "/(blog)/"  }}
@@ -30,15 +29,13 @@ const data = useStaticQuery(graphql`
   `)
 
   console.log(data)
-  
-    return( 
+    return(
         <Layout>
             <SEO title="Blog" />
             <h1>Blog</h1>
             {data.allMarkdownRemark.edges.map((article, index) => (
                 <li key={index} >
                     <a href={article.node.frontmatter.path}>{article.node.frontmatter.title}</a>
-                    
                 </li>
             ))}
         </Layout>

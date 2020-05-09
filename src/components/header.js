@@ -5,32 +5,40 @@ import Typed from 'react-typed';
 import Menu from './menu.js'
 import Avatar from './avatar.js'
 
-const Header = ({ siteTitle }) => (
-  <header className="Header gradient">
+const Header = ({ siteTitle, props }) => {
+  const path = window.location.pathname
 
-    <div className="Content">
-      <Menu />
-      <h1 className="Header-title text-center title-spacing">
-          <span>Hi, I'm Nelkit,</span>
-          <br/>
-          <strong>
-            <Typed
-              strings={[
-                'iOS Developer',
-                'Android Developer',
-                'Web Developer']}
-              typeSpeed={40}
-              backSpeed={50}
-              loop />
-          </strong>
-      </h1>
-      <div className="Header-contact-bar">
-        <Avatar/>
-        <button>Contacto</button>
+  return(
+    <header className="Header gradient">
+      <div className="Content">
+        <Menu />
+        { !path.includes("blog") && !path.includes("projects") && (
+          <>
+          <h1 className="Header-title text-center title-spacing" >
+              <span>Hi, I'm Nelkit,</span>
+              <br/>
+              <strong>
+                <Typed
+                  strings={[
+                    'iOS Developer',
+                    'Android Developer',
+                    'Web Developer']}
+                  typeSpeed={40}
+                  backSpeed={50}
+                  loop />
+              </strong>
+          </h1>
+          <div className="Header-contact-bar">
+            <Avatar/>
+            <a href="mailto:nelkitisael792@yahoo.com" className="btn btn-success medium">Contacto</a>
+          </div>
+          </>
+        )}
+
       </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

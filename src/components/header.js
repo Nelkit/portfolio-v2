@@ -6,13 +6,10 @@ import Menu from './menu.js'
 import Avatar from './avatar.js'
 
 const Header = ({ siteTitle, props }) => {
-  const path = window.location.pathname
-
   return(
     <header className="Header gradient">
       <div className="Content">
         <Menu />
-        { !path.includes("blog") && !path.includes("projects") && (
           <>
           <h1 className="Header-title text-center title-spacing" >
               <span>Hi, I'm Nelkit,</span>
@@ -33,8 +30,6 @@ const Header = ({ siteTitle, props }) => {
             <a href="mailto:nelkitisael792@yahoo.com" className="btn btn-success medium">Contacto</a>
           </div>
           </>
-        )}
-
       </div>
     </header>
   )

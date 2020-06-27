@@ -26,7 +26,7 @@ const About = () => {
       <div className="text-center">
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <hr className="divider" />
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        <div className="Text-body text-left" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </div>
     </Layout>
   )

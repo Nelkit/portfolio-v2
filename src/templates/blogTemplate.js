@@ -31,7 +31,6 @@ export default function Template({
       </footer>
 
     </>
-
   )
 }
 export const pageQuery = graphql`

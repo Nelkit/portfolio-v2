@@ -1,0 +1,100 @@
+.Article-item{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Article-item:hover{
+    background: #fffbfb;
+    box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.1);
+}
+
+.Article-item a{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #353636;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.Article-item .Featured-wrapper{
+    padding-left: 40px;
+    padding-right: 80px;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.Article-item .Text-wrapper{
+    margin: 0px 80px;
+    text-align: left;
+}
+
+.Article-item .title{
+    margin: 20px 0px 0px 0px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.Article-item .author{
+    margin: 0px 0px 20px 0px;
+    color: #888888;
+    font-size: 1.2em;
+    display: block;
+}
+
+.Article-item .summary{
+    color: #222;
+    font-size: 1em;
+    display: block;
+}
+
+.Article-item .author-image{
+    width: 80px;
+    height: 80px;
+    position: absolute !important;
+    top: 100px;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Article-item .date{
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.Article-item .date hr{
+    margin: 10px 0px;
+}
+
+.Article-item .date span:first-child{
+    font-size: 2em;
+    color: #222;
+}
+
+.Article-item .date span{
+    color: #888;
+}
+
+@media only screen and (max-width: 680px) {
+    .Article-item .author-image{
+        top: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .Article-item .Featured-wrapper{
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+
+    .Article-item .Text-wrapper{
+        margin: 0px 20px;
+    }
+}

@@ -5,7 +5,6 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./../styles/project.css"
-
 const ProjectPage = () => {
   const data = useStaticQuery(graphql`
     query {

@@ -4,6 +4,7 @@ import "./../styles/header.css"
 import Typed from 'react-typed';
 import Menu from './menu.js'
 import Avatar from './avatar.js'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const Header = ({ siteTitle, props }) => {
   return(
@@ -27,7 +28,9 @@ const Header = ({ siteTitle, props }) => {
           </h1>
           <div className="Header-contact-bar">
             <Avatar/>
-            <a href="mailto:nelkitisael792@yahoo.com" className="btn btn-success medium">Contacto</a>
+            <OutboundLink href="mailto:nelkitisael792@yahoo.com" className="btn btn-success medium">
+            Contacto
+            </OutboundLink>
           </div>
           </>
       </div>

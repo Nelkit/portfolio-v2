@@ -17,6 +17,14 @@
     },
     {
         "id":3,
+        "title": "CV",
+        "link": "https://bit.ly/31ozPu6",
+        "icon": "cv.png",
+        "width": 40,
+        "height": 40
+    },
+    {
+        "id":4,
         "title": "LinkedIn",
         "link": "https://www.linkedin.com/in/nelkit/",
         "icon": "linkedin.png",
@@ -24,7 +32,7 @@
         "height": 40
     },
     {
-        "id":4,
+        "id":5,
         "title": "Behance",
         "link": "https://www.behance.net/nelkitisaef6da",
         "icon": "behance.png",

@@ -61,3 +61,69 @@
 .Project-list-item:hover .summary{
     color: black;
 }
+
+.Project-wrapper-image{
+    position: relative;
+}
+
+.Tag{
+    text-align: left;
+    padding: 10px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.Tag span{
+    display: inline-flex;
+    margin-right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+
+.Back-btn{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    position: relative;
+    padding: 3px 5px;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 40px;
+}
+
+.Back-btn:hover{
+    background: #fff9f9;
+    border-color: rgb(0, 102, 255);;
+}
+
+.Project-post-content{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.Project-post-content h4{
+    margin-bottom: 10px;
+}
+
+.Project-post-content hr{
+    margin: 20px 0px;
+    
+}
+
+
+.Skills .progress-bar{
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

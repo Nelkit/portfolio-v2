@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import Tag from "../components/tag"
 import SEO from "../components/seo"
 import "./../styles/project.css"
 const ProjectPage = () => {
@@ -10,16 +11,18 @@ const ProjectPage = () => {
     query {
         allMarkdownRemark(
             filter: { fileAbsolutePath: {regex: "/(projects)/"  }}
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { order: ASC, fields: [frontmatter___order] }
             limit: 1000
           ) {
             edges {
               node {
                 html
                 frontmatter {
-                  date(formatString: "MMMM DD, YYYY")
+                  order
                   path
                   title
+                  summary
+                  tags
                   featuredImage {
                     childImageSharp {
                       fluid(maxWidth: 800) {
@@ -44,9 +47,12 @@ const ProjectPage = () => {
             {data.allMarkdownRemark.edges.map((article, index) => (
                 <li className="Project-list-item" key={index} >
                   <a href={article.node.frontmatter.path}>
-                    <Img className="featured" fluid={article.node.frontmatter.featuredImage.childImageSharp.fluid} alt={article.node.frontmatter.title}/>
+                    <div className="Project-wrapper-image">
+                      <Img className="featured" fluid={article.node.frontmatter.featuredImage.childImageSharp.fluid} alt={article.node.frontmatter.title}/>
+                      <Tag tagsString={article.node.frontmatter.tags}/>
+                    </div>
                     <strong className="title">{article.node.frontmatter.title}</strong>
-                    <span className="summary">In the spring of 2003, during my first year of college at USU, I took a general education business... </span>
+                    <span className="summary">{article.node.frontmatter.summary} </span>
                   </a>
                 </li>
             ))}

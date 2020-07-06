@@ -5,12 +5,16 @@ import Typed from 'react-typed';
 import Menu from './menu.js'
 import Avatar from './avatar.js'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { globalHistory } from '@reach/router'
 
 const Header = ({ siteTitle, props }) => {
+  const path = globalHistory.location.pathname
+
   return(
     <header className="Header gradient">
       <div className="Content">
         <Menu />
+        {!path.includes("blog") && !path.includes("projects") && (
           <>
           <h1 className="Header-title text-center title-spacing" >
               <span>Hi, I'm Nelkit,</span>
@@ -33,6 +37,7 @@ const Header = ({ siteTitle, props }) => {
             </OutboundLink>
           </div>
           </>
+        )}
       </div>
     </header>
   )

@@ -48,7 +48,7 @@ const Blog = () => {
   console.log(data)
     return(
         <Layout>
-          <div className="text-center">
+          {/* <div className="text-center">
             <SEO title="Blog" />
             <h1>Blog</h1>
             <hr className="divider" />
@@ -77,7 +77,16 @@ const Blog = () => {
                 <hr/>
                 </>
             ))}
-          </div>
+          </div> */}
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <h2>Proximamente</h2>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </Layout>
     )
 }

@@ -17,7 +17,7 @@ const Header = ({ siteTitle, props }) => {
         {!path.includes("blog") && !path.includes("projects") && (
           <>
           <h1 className="Header-title text-center title-spacing" >
-              <span>Hi, I'm Nelkit,</span>
+              <span>Hola, soy Nelkit,</span>
               <br/>
               <strong>
                 <Typed

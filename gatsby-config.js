@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Portafolio - Nelkit Chavez`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Portafolio Nelkit Chavez`,
+    description: `Mi nombre es Nelkit Chavez soy desarrollador de software, actualmente especializado en Desarrolló de Aplicaciones Moviles; nací en Honduras y me gradúe en la Universidad Politécnica de Ingeniería como Ingeniero en Tecnologías de Información y Comunicación, Trabajo actualmente en una empresa de movilidad urbana llamada Ryte.`,
+    author: `@nelkitchavez`,
   },
   plugins: [
     {
@@ -34,7 +34,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-n.png`, // This path is relative to the root of the site.
       },
     },
     {

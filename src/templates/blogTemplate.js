@@ -26,7 +26,7 @@ export default function Template({
       </main>
       <footer>
         <div className="Content">
-          Handmade by me © {new Date().getFullYear()}.
+        Hecho con ❤️ by me © {new Date().getFullYear()}.
         </div>
       </footer>
 

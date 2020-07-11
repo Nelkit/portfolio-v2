@@ -1,7 +1,7 @@
 {
-  "name": "Portafolio Nelikt Chavez",
+  "name": "nelkit-chavez-portafolio",
   "private": true,
-  "description": "Pagina web pesonal",
+  "description": "Sitio Personal Nelkit",
   "version": "0.1.0",
   "author": "Nelkit Chavez <nelkitisael792@gmail.com>",
   "dependencies": {

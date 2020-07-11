@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#3E708A" x="0" y="0" width="512" height="512" rx="109"></rect>
+        <g id="logo" transform="translate(37.000000, 35.000000)">
+            <g id="mf-logo" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M395.628139,143.788921 L395.628139,337.022033 C395.628139,371.574316 367.858411,399.724265 333.772825,399.724265 L104.462143,399.724265 C70.3765557,399.724265 42.6068278,371.574316 42.6068278,337.022033 L42.6068278,105.181216 C42.6068278,70.6289323 70.3765557,42.4789838 104.462143,42.4789838 L398.836194,42.4789838 L398.836194,4.54747351e-13 L104.462143,4.54747351e-13 C47.2184072,4.54747351e-13 0.70160676,47.1537045 0.70160676,105.181216 L0.70160676,336.818784 C0.70160676,394.947919 47.1181554,442 104.462143,442 L333.572321,442 C390.916308,442 437.332857,394.947919 437.332857,336.818784 L437.332857,143.788921 L395.628139,143.788921 Z" id="Shape" transform="translate(219.017232, 221.000000) scale(-1, 1) rotate(-180.000000) translate(-219.017232, -221.000000) "></path>
+            </g>
+            <path d="M136,105 L136,333" id="Line" stroke="#FFFFFF" stroke-width="43" stroke-linecap="round"></path>
+            <path d="M303,105 L303,333" id="Line" stroke="#FFFFFF" stroke-width="43" stroke-linecap="round"></path>
+            <path d="M136,105 L302,337" id="Line" stroke="#FFFFFF" stroke-width="43" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

@@ -27,7 +27,7 @@ export default function Template({
                 <h4>Definición del proyecto</h4>
                 <p>{frontmatter.summary}</p>
                 <h4>Tareas Realizadas</h4>
-                <p dangerouslySetInnerHTML={{ __html: html }} />
+                <div dangerouslySetInnerHTML={{ __html: html }} />
                 <h4>Habilidades Adquiridas</h4>
                 <div className="Skills">
                   {skills.map((skill, index) => (

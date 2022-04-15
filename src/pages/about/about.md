@@ -20,4 +20,4 @@ Soy fan de los productos de **Apple** y me apasiona desarrollar aplicaciones en 
  Durante mi tiempo libre me encanta escuchar musica, escuchar podcast, hacer ejercicio, leer libros, viajar.
 
 
- Para más información descargar mi curriculum aquí: [CV o Resumen](https://drive.google.com/file/d/15eChKfjO80IrAI3TEooLIsZskKa-nIIa/view?usp=sharing)
+ Para más información descargar mi curriculum aquí: [CV o Resumen](https://drive.google.com/file/d/14HrjedEoNkWAHom78meM4Cg8v8k1HU8s/view?usp=sharing)
